@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-certificates",
-  "version": "0.6.4",
+  "name": "cordova-plugin-ignoresslerror",
+  "version": "0.6.5",
   "description": "Cordova Certificate Plugin",
   "cordova": {
-    "id": "cordova-plugin-certificates",
+    "id": "cordova-plugin-ignoresslerror",
     "platforms": [
       "android",
       "ios"
