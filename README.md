@@ -19,26 +19,10 @@ Feel free to **donate**
 ### Install
 
 ```
-cordova plugin add cordova-plugin-certificates
+cordova plugin add cordova-plugin-ignoresslerror
 ```
 
-> For Cordova-Android before 4.1.0 you need to install this version
 
-```
-cordova plugin add cordova-plugin-certificates@0.5.0
-```
-
-### Usage
-
-Activate insecure certificates
-```
-cordova.plugins.certificates.trustUnsecureCerts(true)
-```
-
-Dectivate insecure certificates
-```
-cordova.plugins.certificates.trustUnsecureCerts(false)
-```
 
 ## Development
 
