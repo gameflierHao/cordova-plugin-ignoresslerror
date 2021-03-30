@@ -30,6 +30,9 @@ package de.martinreinhardt.cordova.plugins;
 import org.apache.cordova.engine.SystemWebViewEngine;
 import org.apache.cordova.engine.SystemWebViewClient;
 
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.http.SslError;
 import android.util.Log;
 import android.webkit.SslErrorHandler;
@@ -85,8 +88,8 @@ public class CertificatesCordovaWebViewClient extends SystemWebViewClient {
      */
     @Override
 	public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-	  final String packageName = this.cordova.getActivity().getPackageName();
-	  final PackageManager pm = this.cordova.getActivity().getPackageManager();
+	  final String packageName = view.getContext().getPackageName();
+	  final PackageManager pm = view.getContext().getPackageManager();
 
 	  ApplicationInfo appInfo;
 	  try {
